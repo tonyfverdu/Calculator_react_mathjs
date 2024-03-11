@@ -1,0 +1,32 @@
+:root {
+  --backgroundColorHellGray: rgb(167, 166, 166);
+  --backgroundColorIni: rgb(231, 230, 230);
+  --backgroundColorIni2: rgb(205, 204, 204);
+  --backgroundColorRowTable: rgba(202, 202, 220, 0.7);
+  --gradientDunkel: linear-gradient(45deg, black 18%, rgb(56, 56, 56) 40%, rgb(138, 138, 138) 43%, rgb(196, 196, 196) 46%, rgb(141, 141, 141) 54%,
+      rgb(196, 196, 196) 54%, rgb(138, 138, 138) 57%, rgb(56, 56, 56) 60%, black);
+
+  --boxShadow: -12px 12px 24px #525252, 6px -6px 20px #cfcece;
+}
+
+.containerCalculator {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0% auto;
+  padding: 1%;
+
+  width: 30vw;
+  height: auto;
+
+  border: 6px solid var(--backgroundColorHellGray);
+  border-radius: 19px;
+  border-left: 3px solid var(--backgroundColorIni);
+  border-top: 3px solid var(--backgroundColorIni2);
+  border-bottom: 4px solid var(--backgroundColorRowTable);
+
+  background: var(--gradientDunkel);
+  box-shadow: var(--boxShadow);
+}

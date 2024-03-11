@@ -1,0 +1,85 @@
+:root {
+  --backgroundcolor: rgb(230, 229, 229);
+  --backgroundColorRowTable: rgba(223, 223, 243, 0.7);
+
+  --boxShadowHeader: -4px -4px 5px #bebebec4, 3px 3px 5px #ecebebda;
+
+  --colorTextTitle: rgb(0, 0, 0);
+  --colorTextSubtitle: rgb(61, 61, 61);
+
+  --textShadow1: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+}
+
+.headerMain {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 40%;
+  height: auto;
+  background-color: var(--backgroundcolor);
+  margin: 2% auto;
+  margin-bottom: 0.8%;
+  padding: 4% auto;
+
+  border: 2px solid var(--backgroundColorRowTable);
+  border-radius: 9px;
+
+  box-shadow: var(--boxShadowHeader);
+}
+
+.title {
+  color: var(--colorTextTitle);
+  font-size: 2.6rem;
+  font-weight: 900;
+  margin: 3% auto;
+
+  text-shadow: var(--textShadow1);
+  text-align: center;
+}
+
+.subtitle {
+  color: var(--colorTextSubtitle);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 1% auto;
+
+  text-shadow: var(--textShadow1);
+  text-align: center;
+}
+
+/* 
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 6s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(180deg) scale(2);
+  }
+
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+.containerHeaderTitleText {
+  @include l.layoutFlexboxColumCenter;
+  text-align: center;
+
+  &>h2 {
+    @include d.desig_H_element (v.$colorDunkel, 2.6rem);
+    margin-bottom: 2%;
+  }
+
+  &>h6 {
+    @include d.desig_H_element (v.$backgroundColorDunkelGray, 1.1rem);
+  }
+} */
